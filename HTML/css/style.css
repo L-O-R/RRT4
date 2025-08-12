@@ -1,0 +1,21 @@
+/* child selector */
+/* body > h2 {
+    font-size: 200px;
+} */
+/* decendant selector */
+/* body h2 {
+    font-size: 100px;
+} */
+
+/*  adjacent selector */
+/* div+h3 {
+    font-size: 60px;
+} */
+
+
+/* genral sibling selector */
+/* div~h3 {
+    font-size: 50px;
+} */
+
+/*  group slector, pseudo class and elements */

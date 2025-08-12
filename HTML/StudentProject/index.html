@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my Student Portal</h1>
+        <nav>
+            <a href="#Profile">Profile</a>
+            <a href="#Courses">Cources</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#media">Media</a>
+        </nav>
+    </header>
+    <hr>
+
+    <section id="Profile">
+        <h2>Student Profile</h2>
+        <p>
+            <strong>Name: </strong>
+            John Doe
+        </p>
+        <p>
+            <strong>Student ID: </strong>
+            JD10209u0
+        </p>
+        <p>
+            <strong>Student Email: </strong>
+            johnDoe@gmail.com
+        </p>
+        <img src="n.jpg" alt="Naruto" width="200" height="300">
+    </section>
+    <!--  -->
+    <hr>
+    <section id="Courses">
+        <h2>Enrolled Courses</h2>
+
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <th>SrNo.</th>
+                <th>Course Name</th>
+                <th>Course Id</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Hypertext Markup Language</td>
+                    <td>HTML5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Hypertext Markup Language</td>
+                    <td>HTML5</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Hypertext Markup Language</td>
+                    <td>HTML5</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+
+    <section id="feedback">
+        <form action="">
+            <h2>📝 Feedback Form </h2>
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+
+            <div>
+                <h3>Rate The Page</h3>
+                <input type="radio" id="Perfect" name="rating">
+                <label for="Perfect">Perfect</label>
+                <br>
+                <input type="radio" id="Good" name="rating">
+                <label for="Good">Good</label>
+                <br>
+                <input type="radio" id="Bad" name="rating">
+                <label for="Bad">Bad</label>
+            </div>
+            <br>
+            <div>
+                <label for="suggest">Suggestion <sup>*</sup>
+                </label>
+                <br>
+                <textarea id="suggest" cols="40" rows="5"></textarea>
+            </div>
+            <br>
+            <div>
+                <select>
+                    <option value="">Select The Course</option>
+                    <option value="">HTML</option>
+                    <option value="">CSS</option>
+                    <option value="">JS</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="Newsletter">
+                <label for="Newsletter">Subscribe to our News Letter</label>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <hr>
+    <br>
+    <section id="media">
+        <video src="video.mp4" autoplay muted plasyinline loop width="400" height="250"></video>
+        <br>
+        <audio src="downfall.mp3" controls></audio>
+        <br>
+        <br>
+        <iframe src="https://www.wikipedia.org/" frameborder="0" width="1200" height="800" loading="lazy"></iframe>
+    </section>
+    <br>
+    <br>
+    <hr>
+    <footer>
+
+        <p>&copy; College | Contact: support@xyzcollege.edu</p>
+
+        <a href="#">Back to top</a>
+        <br>
+        <br>
+
+    </footer>
+</body>
+
+</html>
