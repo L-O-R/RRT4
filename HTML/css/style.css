@@ -1,21 +1,177 @@
-/* child selector */
-/* body > h2 {
+/* ================================
+   1. Universal Selector (*)
+   ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   2. Type Selector
+   ================================ */
+h1 {
+    color: blue;
+}
+
+/* ================================
+   3. ID Selector
+   ================================ */
+#sub_heading {
+    color: darkgreen;
+}
+
+/* ================================
+   4. Class Selector
+   ================================ */
+.heading {
+    color: crimson;
+}
+
+/* ================================
+   5. Descendant Selector
+   ================================ */
+div h2 {
+    color: orange;
+}
+
+/* ================================
+   6. Child Selector
+   ================================ */
+body>h2 {
+    font-size: 30px;
+}
+
+/* ================================
+   7. Adjacent Sibling Selector
+   ================================ */
+div+h3 {
+    font-style: italic;
+}
+
+/* ================================
+   8. General Sibling Selector
+   ================================ */
+div~h3 {
+    text-decoration: underline;
+}
+
+/* ================================
+   9. Attribute Selector
+   ================================ */
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+input[type="password"] {
+    border: 2px solid red;
+}
+
+/* ================================
+   10. Group Selector
+   ================================ */
+h1,
+h2,
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ================================
+   11. Pseudo-classes
+   ================================ */
+button:hover {
+    background-color: red;
+}
+
+button:disabled {
+    background-color: black;
+}
+
+/* ================================
+   12. Pseudo-elements
+   ================================ */
+h1::before {
+    content: "h1 ";
+}
+
+h1::after {
+    content: "h1 ";
+}
+
+/* ================================
+   13. Nth-child Selector
+   ================================ */
+
+/* body:nth-child(odd) {
     font-size: 200px;
 } */
-/* decendant selector */
-/* body h2 {
-    font-size: 100px;
+
+/* ================================
+   14. Negation Selector (:not)
+   ================================ */
+/* h3:not(.heading) {
+    background-color: yellow;
 } */
 
-/*  adjacent selector */
-/* div+h3 {
-    font-size: 60px;
+/* ================================
+   15. TEXT PROPERTIES (Long Form)
+   ================================ */
+h1 {
+    font-size: 48px;
+    /* size of text */
+    font-weight: bold;
+    /* boldness */
+    font-style: italic;
+    /* italic text */
+    font-family: Arial, sans-serif;
+    /* font family */
+    text-align: center;
+    /* horizontal alignment */
+    text-transform: uppercase;
+    /* all caps */
+    letter-spacing: 2px;
+    /* space between letters */
+    word-spacing: 5px;
+    /* space between words */
+    line-height: 1.5;
+    /* space between lines */
+    color: blue;
+    /* text color */
+}
+
+/* ================================
+   16. TEXT PROPERTIES (One Line)
+   ================================ */
+/* font: font-style font-variant font-weight font-size/line-height font-family */
+h2 {
+    font: italic small-caps bold 36px/1.5 Georgia, serif;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+/* ================================
+   17. BACKGROUND PROPERTIES (Long Form)
+   ================================ */
+/* body { */
+/* background-color: lightgray; */
+/* background color */
+/* background-image: url("https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?q=80&w=1339&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+/* background image */
+/* background-repeat: no-repeat; */
+/* repeat control */
+/* background-position: center top; */
+/* image position */
+/* background-size: cover; */
+/* resize image to cover */
+/* background-attachment: fixed; */
+/* scroll or fixed */
+/* } */
+
+/* ================================
+   18. BACKGROUND PROPERTIES (One Line)
+   ================================ */
+/* background: color image repeat position/size attachment */
+/* h3 {
+    background: yellow url("https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?q=80&w=1339&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") repeat-x center/contain fixed;
 } */
-
-
-/* genral sibling selector */
-/* div~h3 {
-    font-size: 50px;
-} */
-
-/*  group slector, pseudo class and elements */
