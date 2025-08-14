@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Showcase</title>
+    <style>
+        /* Universal selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Type selector */
+        h1 {
+            color: darkblue;
+        }
+
+        /* Class selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID selector */
+        #special {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Descendant selector */
+        div p {
+            color: green;
+        }
+
+        /* Child selector */
+        div>span {
+            color: purple;
+        }
+
+        /* Adjacent sibling selector */
+        h2+p {
+            color: orange;
+        }
+
+        /* General sibling selector */
+        h3~p {
+            font-style: italic;
+        }
+
+        /* Attribute selector */
+        a[target] {
+            color: blue;
+        }
+
+        /* Attribute equals */
+        a[target="_blank"] {
+            text-decoration: underline;
+        }
+
+        /* Attribute contains */
+        input[type*="text"] {
+            border: 2px solid teal;
+        }
+
+        /* Attribute starts with */
+        img[alt^="icon"] {
+            border: 2px solid pink;
+        }
+
+        /* Attribute ends with */
+        a[href$=".pdf"] {
+            color: brown;
+        }
+
+        /* Pseudo-classes */
+        li:first-child {
+            color: yellow;
+        }
+
+        li:last-child {
+            color: darkgreen;
+        }
+
+        li:nth-child(2) {
+            color: rgb(253, 14, 122);
+        }
+
+
+        a:hover {
+            background: lightgray;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+        }
+
+        button:disabled {
+            background: gray;
+            color: white;
+        }
+
+        /* Negation pseudo-class */
+        p:not(.highlight) {
+            border-left: 4px solid lightblue;
+        }
+
+        /* Pseudo-elements */
+        p::after {
+            content: " ✓";
+            color: green;
+        }
+
+        p::first-letter {
+            color: Red;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <li>list outside or first </li>
+    <h1>CSS Selector Examples</h1>
+
+    <p class="highlight">This paragraph has a class.</p>
+    <p id="special">This paragraph has an ID.</p>
+
+    <div>
+        <p>Paragraph inside a div (descendant selector).</p>
+        <span>Span directly inside div (child selector).</span>
+    </div>
+
+    <h2>Heading 2</h2>
+    <p>Paragraph immediately after h2 (adjacent sibling).</p>
+
+    <h3>Heading 3</h3>
+    <p>Paragraph after h3 (general sibling).</p>
+    <p class="highlight">Another paragraph after h3.</p>
+
+    <a href="example.html" target="_self">Regular link</a><br>
+    <a href="example.pdf" target="_blank">PDF link (target=_blank)</a>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Last item</li>
+    </ul>
+
+    <input type="text" placeholder="Text input">
+    <input type="password" placeholder="Password input">
+    <br>
+    <img src="icon1.png" alt="icon-user">
+    <img src="logo.png" alt="company-logo">
+
+    <br>
+    <button>Enabled Button</button>
+    <button disabled>Disabled Button</button>
+
+</body>
+
+</html>
