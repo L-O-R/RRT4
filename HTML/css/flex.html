@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        .flex-container {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            background-color: #d5d5d5;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .flexitem {
+            width: 100px;
+            border: 1px solid black;
+            flex-shrink: 0;
+        }
+
+        .flexitem:nth-of-type(even) {
+            align-self: flex-start;
+            justify-self: end;
+            background-color: aliceblue;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+    <h1>What is Flex</h1>
+    <p>Flex is 1D or 1 dimenstional layout</p>
+
+
+    <section class="flex-container">
+        <div class="flexitem item-1 ">1</div>
+        <div class="flexitem item-2 ">2</div>
+        <div class="flexitem item-1">1</div>
+        <div class="flexitem item-2">2</div>
+        <div class="flexitem item-1">1</div>
+        <div class="flexitem item-2">2</div>
+        <div class="flexitem item-1">1</div>
+        <div class="flexitem item-2">2</div>
+    </section>
+</body>
+
+</html>
